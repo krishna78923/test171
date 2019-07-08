@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#loading{
+			margin-left: 25%;
+
+			margin-top: 75%;
+		}
+		#loadingText{
+			margin-left: 25%;
+			position: absolute;
+		}
+	</style>
+</head>
+<script type="text/javascript">
+	 var image =document.getElementById('tol');
+	 var init=0;
+	 function runcode(){
+	 	setInterval(function(){ init+=1;
+	 		// alert(init);
+	 	if(init==3){
+	 		window.location.href="others.html";
+	 	} }, 3000);
+	 }
+	 runcode();
+</script>
+<body style="background-color: black;">
+	<img id="loading" src="loading2.gif" height="200" width="400" /><br>
+	<img id="loadingText" src="loadingtext.gif" height="400" width="400"/>
+
+</body>
+</html>
